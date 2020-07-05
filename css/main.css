@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 75%, rgb(170, 63, 63) 96%);
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* NAVIGATION */
+nav {
+    position: sticky;
+    top: 0; /*odnosi się do position:sticky*/
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(170, 63, 63);
+    text-align: center;
+    overflow: hidden;
+    z-index: 1; /*żeby nawigacja była zawsze na górze*/
+}
+
+.nav-mobile {
+    margin-right: 100%;
+}
+
+.nav-mobile button {
+    font-size: 30px;
+    padding: 0 30px;
+    background: none;
+    border: none;
+    line-height: 60px;
+    /* cursor: pointer; */
+}
+
+.nav-desktop {
+    display: none;
+}
+
+/* HEADER */
+.header-img {
+    position: relative;
+    height: 330px;
+    background-image: url(../img/street-4942809_640.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+}
+
+.header-text h1 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.header-text span {
+    color: rgb(170, 63, 63);
+}
+
+.header-text p {
+    font-size: 15px;
+    color: rgb(192, 192, 192);
+}
+
+/* MAIN */
+section {
+    margin: 80px 0;
+}
+
+main h2 {
+    font-size: 28px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: -5px;
+    width: 80px;
+    height: 3px;
+    background-color: rgb(170, 63, 63);
+}
+
+.products {
+    font-size: 0;
+}
+
+.link {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(170, 63, 63);
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.link:hover {
+    color: rgb(223, 122, 122);
+} 
+
+.about-us p {
+    padding: 0 20px;
+}
+
+.main-product {
+    position: relative;
+    height: 260px;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-product:hover .product-text h3 {
+ transform: scale(1.2);
+}
+
+.first-product {
+    background-image: url(/img/mt-fuji-1225931_1920.jpg);
+}
+
+.second-product {
+    background-image: url(/img/apartments-4358755_1920.jpg);
+}
+
+.third-product {
+    background-image: url(/img/cuisine-1999331_1920.jpg);
+}
+
+.fourth-product {
+    background-image: url(/img/universal-5047369_1920.jpg);
+}
+
+.product-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.product-text h3 {
+    transition: transform .3s;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h3 {
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 160%;
+}
+
+/* FOOTER */
+
+footer {
+    height: 80px;
+    line-height: 80px;
+    font-size: 10px;
+    text-align: center;
+    border-top: 1px solid rgb(148, 55, 55);
+    background-color: rgb(170, 63, 63);
+}
+
+@media (min-width: 370px) {
+    .header-text h1 {
+        margin-bottom: 15px;
+        font-size: 36px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .product-text h3 {
+        font-size: 36px;
+    }
+
+    .product-text {
+        font-size: 19px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+}

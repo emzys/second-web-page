@@ -1,0 +1,14 @@
+/* (min-width: 992px) */
+
+.header-img {
+    background-image: url(../img/street-4942809_1920.jpg);
+    background-size: cover;
+}
+
+
+/* MAIN */
+
+.main-product {
+    width: 50%;
+    
+}
